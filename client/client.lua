@@ -1,5 +1,9 @@
 local processedPeds = {}
 
+local Config = {
+    ScanInterval = 500 -- milliseconds between scans; adjust as needed
+}
+
 CreateThread(function()
     while true do
         Wait(Config.ScanInterval)
